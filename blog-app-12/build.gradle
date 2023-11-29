@@ -2,7 +2,16 @@ plugins {
 	id 'java'
 	id 'org.springframework.boot' version '3.1.4'
 	id 'io.spring.dependency-management' version '1.1.3'
+	id 'war'
 }
+war {
+    archiveName = 'blog-app-12.war' // Optional: Change the name as needed
+    // include/exclude configurations if needed
+}
+application {
+    mainClassName = 'com.adityarai1.blog.BlogApp12Application' // Specify your main application class
+}
+
 
 group = 'com.adityarai1.blog'
 version = '0.0.1-SNAPSHOT'
